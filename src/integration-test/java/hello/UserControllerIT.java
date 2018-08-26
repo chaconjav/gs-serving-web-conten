@@ -39,6 +39,6 @@ public class UserControllerIT {
         String url = base.toString() + "/user/new";
         ResponseEntity<User> responseEntity = template.getForEntity(url, User.class);
         User user = responseEntity.getBody();
-        assertThat(user.getName(), equalTo("John"));
+        assertThat(user.getName(), equalTo("Johnx"));
     }
 }
